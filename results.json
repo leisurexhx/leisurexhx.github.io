@@ -1,0 +1,67 @@
+{
+  "updated": "2026-10-27",
+  "source_description": "EJOR Table 2, continuous-account N100 development comparison",
+  "scope": {
+    "period": "2020–2025",
+    "account_intervals": 1453,
+    "top_n": 100,
+    "one_way_cost_bp": 10,
+    "annualization_days": 252,
+    "turnover": "mean executed buy-plus-sell notional / pre-trade NAV",
+    "layer": "historical adjusted-price proxy accounts",
+    "live_performance": false
+  },
+  "results": [
+    {
+      "id": "DIRECT",
+      "name": "每日重构",
+      "net_cagr_percent": 7.71,
+      "net_vol_percent": 21.7,
+      "sharpe": 0.45,
+      "max_drawdown_magnitude_percent": 30.24,
+      "turnover_percent": 64.41
+    },
+    {
+      "id": "P3",
+      "name": "排名缓冲",
+      "net_cagr_percent": 12.96,
+      "net_vol_percent": 21.31,
+      "sharpe": 0.678,
+      "max_drawdown_magnitude_percent": 29.54,
+      "turnover_percent": 39.6
+    },
+    {
+      "id": "WEEKLY",
+      "name": "周度更新",
+      "net_cagr_percent": 17.08,
+      "net_vol_percent": 20.91,
+      "sharpe": 0.858,
+      "max_drawdown_magnitude_percent": 26.91,
+      "turnover_percent": 28.25
+    },
+    {
+      "id": "PA_FREE",
+      "name": "灵活数量部分调整",
+      "net_cagr_percent": 21.88,
+      "net_vol_percent": 19.76,
+      "sharpe": 1.1,
+      "max_drawdown_magnitude_percent": 24.76,
+      "turnover_percent": 15.67
+    },
+    {
+      "id": "PA_CARDN",
+      "name": "定数量部分调整",
+      "net_cagr_percent": 20.31,
+      "net_vol_percent": 16.69,
+      "sharpe": 1.191,
+      "max_drawdown_magnitude_percent": 18.84,
+      "turnover_percent": 7.32
+    }
+  ],
+  "notes": [
+    "Percent fields are percentage values, not decimal returns.",
+    "MDD values are displayed as positive magnitudes.",
+    "These rows do not evaluate the latest Debei models.",
+    "Values transcribed from the research table, not independently recomputed."
+  ]
+}
